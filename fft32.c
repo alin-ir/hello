@@ -21,9 +21,9 @@
 #endif
 
 /* Forward declaration of the 16-point kernel (defined in another module) */
-static void fft16( float *vec );
+extern void fft16( float *vec );
 
-static void fft32( float *vec )
+void fft32( float *vec )
 {
     /* Split input into even and odd indexed samples */
     float even[32];  /* 16 complex numbers */
